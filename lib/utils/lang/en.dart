@@ -180,4 +180,35 @@ const Map<String, String> en = {
   'returned': 'Returned',
   'items': 'Items',
   'noAvailableOrders': 'No available orders at the moment',
+
+/// RETURN
+  'confirmReturn': 'Your return confirmed ',
+   'returnNumber':'Return',
+  'returnProduct':'Return Product',
+  'enterOrderId':  'Please enter your order number ',
+  'willSendCode':'A verification code will be sent to your mobile phone to continue the return',
+  'sendCode':'send code',
+  'enterCode': 'Enter verification code',
+  'code': "code",
+  'confirmed':'confirmed',
+  'confirmOTP':'confirm code',
+
+'orderInfo':'Order information',
+'dateOrdered' :'Order date',
+'customerInformation':'Customer Information',
+'purchase':'Purchases',
+'selectPurchases' : 'Select the purchases to be returned',
+'selectReasonForReturn':'Select the reason of the return',
+'chooseOneReasonsReturn':'Choose one of the reasons below',
+'receivedWrongProduct':'Received an incorrect product',
+'productArrivedDamaged':'Received a damaged product',
+'otherReasons':"Other reasons",
+"typeReason":'Write reasons',
+'isOpen' : 'Has the product been opened?',
+'yes':'Yes',
+'no':'No',
+'remains':'remains',
+'sec':'S'
+
+
 };
