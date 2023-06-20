@@ -199,18 +199,11 @@ class _OrderScreenState extends State<OrderScreen>
                         Lottie.asset(
                           'assets/lottie/no_orders.json',
                         ),
-                        GestureDetector(
-                          onTap: (){
-                              Get.to(()=>
-                  ReturnScreen()
-                  );
-                          },
-                          child: CustomText(
-                            text: 'noAvailableOrders'.tr,
-                            fontSize: 14,
-                            fontWeight: FontWeight.w400,
-                            textAlign: TextAlign.center,
-                          ),
+                        CustomText(
+                          text: 'noAvailableOrders'.tr,
+                          fontSize: 14,
+                          fontWeight: FontWeight.w400,
+                          textAlign: TextAlign.center,
                         ),
                       ],
                     ),
