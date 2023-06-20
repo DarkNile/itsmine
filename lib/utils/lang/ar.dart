@@ -176,4 +176,36 @@ const Map<String, String> ar = {
   'returned': 'مرتجعة',
   'items': 'العناصر',
   'noAvailableOrders': 'لا يوجد طلبات متاحة حالياً',
+
+  /// RETURN
+  'confirmReturn': 'تم تأكيد طلب الاسترجاع',
+  'returnNumber':'رقم الاسترجاع',
+  'returnProduct':'إرجاع منتج',
+  'enterOrderId':  'برجاء إدخال رقم طلب الشراء المدون على الطلب في سجل طلبات الشراء',
+  'willSendCode':  'سيتم إرسال كود تحقق على جوالك لمتابعة عملية الإسترجاع',
+  'sendCode':'إرسال رمز التحقق',
+  'enterCode': 'إدخال رمز التحقق',
+  'code': "رمز التحقق",
+  'confirmed':'تم التأكد',
+  'confirmOTP':'تأكيد الرمز',
+
+  'orderInfo':'معلومات الطلب',
+'dateOrdered' :'تاريخ الطلب',
+'customerInformation':'بيانات العميل',
+'purchase':'المشتريات',
+'selectPurchases' :  'حدد المشتريات المراد إرجاعها',
+'selectReasonForReturn':'حدد سبب الارجاع',
+'chooseOneReasonsReturn':'إختر إحدى أسباب الإرجاع',
+'receivedWrongProduct':'أستلمت منتج بالخطأ',
+'productArrivedDamaged':'أستلمت منتج بالخطأ',
+'otherReasons':'أسباب أخرى',
+"typeReason":'اكتب الأسباب',
+'isOpen' : 'هل تم فتح المنتج',
+'yes':'نعم',
+'no':'لا',
+'remains':'متبقي',
+'sec':'ثانية'
+
+
+
 };

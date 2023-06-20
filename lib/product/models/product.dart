@@ -14,6 +14,7 @@ class Product {
   dynamic priceRaw;
   dynamic totalRaw;
   bool? fav;
+  bool isSelected = false;
   String? model;
   String? image;
   List<String>? images;

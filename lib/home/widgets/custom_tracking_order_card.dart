@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:itsmine/constants/colors.dart';
 import 'package:itsmine/profile/models/tracking_order.dart';
+import 'package:itsmine/return/view/return_screen.dart';
 import 'package:itsmine/widgets/custom_loading_widget.dart';
 import 'package:itsmine/widgets/custom_text.dart';
 
@@ -102,27 +103,37 @@ class CustomTrackingOrderCard extends StatelessWidget {
               const SizedBox(
                 height: 20,
               ),
-              Container(
-                decoration: BoxDecoration(
-                  borderRadius: const BorderRadius.all(Radius.circular(2)),
-                  color: trackingOrder.status! == 'مكتمل'
-                      ? jadeGreen
-                      : trackingOrder.status! == 'إسترجاع'
-                          ? brownishGrey
-                          : trackingOrder.status! == 'تم شحن الطلب'
-                              ? vermillion
-                              : mango,
-                ),
-                alignment: Alignment.center,
-                padding: const EdgeInsets.symmetric(
-                  vertical: 8,
-                  horizontal: 14,
-                ),
-                child: CustomText(
-                  text: trackingOrder.status!,
-                  color: Colors.white,
-                  fontSize: 10,
-                  textAlign: TextAlign.center,
+              InkWell(
+                onTap: (){
+                 if ( trackingOrder.status! == 'إسترجاع' ) 
+                 {
+                  Get.to(()=>
+                  ReturnScreen()
+                  );
+                 }
+                },
+                child: Container(
+                  decoration: BoxDecoration(
+                    borderRadius: const BorderRadius.all(Radius.circular(2)),
+                    color: trackingOrder.status! == 'مكتمل'
+                        ? jadeGreen
+                        : trackingOrder.status! == 'إسترجاع'
+                            ? brownishGrey
+                            : trackingOrder.status! == 'تم شحن الطلب'
+                                ? vermillion
+                                : mango,
+                  ),
+                  alignment: Alignment.center,
+                  padding: const EdgeInsets.symmetric(
+                    vertical: 8,
+                    horizontal: 14,
+                  ),
+                  child: CustomText(
+                    text: trackingOrder.status!,
+                    color: Colors.white,
+                    fontSize: 10,
+                    textAlign: TextAlign.center,
+                  ),
                 ),
               ),
             ],

@@ -10,11 +10,12 @@ class ThankYouScreen extends StatelessWidget {
   const ThankYouScreen({
     super.key,
     required this.orderId,
-    required this.email,
+    required this.email, this.isReturn = false,
   });
 
   final int orderId;
   final String email;
+  final bool isReturn ;
 
   @override
   Widget build(BuildContext context) {
@@ -46,7 +47,7 @@ class ThankYouScreen extends StatelessWidget {
               children: [
                 Center(
                   child: CustomText(
-                    text: 'confirmByEmail'.tr,
+                    text: isReturn ? 'confirmReturn'.tr :'confirmByEmail'.tr,
                     textAlign: TextAlign.center,
                   ),
                 ),
@@ -55,7 +56,7 @@ class ThankYouScreen extends StatelessWidget {
                 ),
                 Center(
                   child: CustomText(
-                    text: email,
+                    text: isReturn ? "" : email,
                     fontWeight: FontWeight.w400,
                     textAlign: TextAlign.center,
                   ),
@@ -87,7 +88,7 @@ class ThankYouScreen extends StatelessWidget {
                 Row(
                   children: [
                     CustomText(
-                      text: 'orderNumber'.tr,
+                      text: isReturn ? "returnNumber".tr: 'orderNumber'.tr,
                       color: brownishGrey,
                       fontSize: 10,
                     ),
